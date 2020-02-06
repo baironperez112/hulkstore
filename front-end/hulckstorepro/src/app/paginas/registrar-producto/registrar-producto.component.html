@@ -1,0 +1,29 @@
+
+
+  <div> 
+    
+    <div [hidden]="true">
+    <label for="id">id</label>
+    <input name="id"  type="text"  required [(ngModel)]="id"/>
+    </div>
+
+    <label for="codigo">codigo</label>
+    <input name="email"  type="text"  required [(ngModel)]="codigo"/>
+  
+    <label for="nombre">nombre</label>
+    <input name="nombre" type="text"  required [(ngModel)]="nombre"/>
+
+    <label for="descripcion">descripcion</label>
+    <input name="descripcion" type="text"  required [(ngModel)]="descripcion"/>
+    <br><br>
+    <label for="precio">precio</label>
+    <input name="precio" type="text"  required [(ngModel)]="precio"/>
+
+    <label for="cantidad">cantidad</label>
+    <input name="nombre" type="text"  required [(ngModel)]="cantidad"/>
+
+    <br><br>
+    <button class="button" mat-raised-button color="accent" (click)="registrarProducto()">Registrar</button>
+    <br><br>
+
+</div> 

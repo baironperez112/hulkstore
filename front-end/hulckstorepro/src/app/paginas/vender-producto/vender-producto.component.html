@@ -1,0 +1,16 @@
+<div>
+  <!--Select para el pais del perfil-->
+  <mat-form-field class="form1">
+    <mat-select placeholder="Producto" [(value)]="idProducSelect">
+        <mat-option *ngFor="let p of productos" [value]="p.id">{{p.nombre}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <!--Cantidad-->
+  <mat-form-field >
+    <input  matInput placeholder="Cantidad" [(ngModel)]="cantidad">
+  </mat-form-field>
+
+  <button class="btningresar" mat-raised-button color="primary" (click)=vender()>Vender</button>
+</div>
+
